@@ -13,9 +13,17 @@
   font-family: "Kanit", system-ui;
 }
 
-.header .userlogin-button-large{
+.header .userlogin-button-large {
   background-color: #9c54ff;
   color: #e4cfff;
+  font-size: 20px;
+  font-family: "Kanit", system-ui;
+}
+
+.header .userlogin-button-large:hover {
+  border: 2px solid #9c54ff;
+  background-color: #fff;
+  color: #9c54ff;
   font-size: 20px;
   font-family: "Kanit", system-ui;
 }
@@ -66,26 +74,50 @@
   }
 }
 
-@media (min-width: 320px){
-  .navbar-toggler-icon{
+@media (min-width: 320px) {
+  .navbar-toggler-icon {
     width: 1em;
     height: 1em;
   }
 }
 
-@media (min-width: 320px){
-  .header .userlogin-button{
-    font-size: 18px;
+@media (min-width: 320px) and (max-width: 768px) {
+  .header .userlogin-button {
+    font-size: 12px;
+  }
+
+  .header .userlogin-button:hover {
+    font-size: 12px;
+    border: 2px solid #9c54ff;
+    background-color: #fff;
+    color: #9c54ff;
   }
 }
 
-.login-button {
-  background-color: #9c54ff;
-  display: flex;
+@media (min-width: 768px) and (max-width: 992px) {
+  .header .userlogin-button {
+    font-size: 14px;
+  }
+
+  .header .userlogin-button:hover {
+    font-size: 14px;
+    border: 2px solid #9c54ff;
+    background-color: #fff;
+    color: #9c54ff;
+  }
 }
 
-.login-button:hover {
-  background-color: #9c54ff;
+@media (min-width: 992px) and (max-width: 1400px) {
+  .header .userlogin-button {
+    font-size: 15px;
+  }
+
+  .header .userlogin-button:hover {
+    font-size: 15px;
+    border: 2px solid #9c54ff;
+    background-color: #fff;
+    color: #9c54ff;
+  }
 }
 
 .search-button {
@@ -168,7 +200,7 @@ footer hr {
   margin-bottom: 1rem;
 }
 
-.categoryIcons{
+.categoryIcons {
   margin-top: 130px;
 }
 
@@ -181,7 +213,6 @@ footer hr {
 .categoryTitle {
   color: #000000;
   font-weight: 300;
-  margin-top: 10px;
   text-align: center;
   font-family: "Kanit", sans-serif !important;
 }
@@ -275,6 +306,12 @@ footer hr {
   }
 }
 
+@media (min-width: 425px) and (max-width: 768px) {
+  .slider-content {
+    padding: 0 !important;
+  }
+}
+
 .carousel-container {
   position: relative;
   max-width: 100%;
@@ -305,6 +342,40 @@ footer hr {
 
 .carousel_slider .item {
   text-align: center;
+  border-radius: 8px;
+}
+
+.item .banner_image {
+  text-align: center !important;
+  width: 80%;
+}
+
+/* @media screen and (max-width: 992px) and (min-width: 320px) {
+  .carousel_slider .item .banner_image {
+    border-radius: 12px !important;
+    width: 100%;
+}
+} */
+
+@media screen and (max-width: 992px) {
+  .carousel_slider .item .banner_image {
+      border-radius: 12px !important;
+      /* width: 100%; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel_slider .item .banner_image {
+    /* width: 100% !important; */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel_slider .item .banner_image {
+    border-radius: 12px !important;
+    /* width: 100%; */
+  }
 }
 
 .owl-nav .owl-prev,
@@ -351,18 +422,18 @@ footer hr {
 /* Product Card Start  */
 .topCard {
   position: relative;
-  overflow: hidden; 
-  transition: transform 0.1s ease, box-shadow 0.3s ease; 
+  overflow: hidden;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
 }
 
 .topCard:hover {
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid #9c54ff;
   cursor: pointer;
 }
 .sub_topCard:hover {
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid #9c54ff;
   cursor: pointer;
@@ -375,7 +446,7 @@ footer hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); 
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -383,7 +454,7 @@ footer hr {
   position: absolute;
   top: 15px;
   left: 10px;
-  width: 5rem;
+  width: 6rem;
   background-color: #9c54ff;
   color: white;
   z-index: 2;
