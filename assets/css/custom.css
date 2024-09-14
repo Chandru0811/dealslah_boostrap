@@ -13,6 +13,13 @@
   font-family: "Kanit", system-ui;
 }
 
+.header .userlogin-button-large{
+  background-color: #9c54ff;
+  color: #e4cfff;
+  font-size: 20px;
+  font-family: "Kanit", system-ui;
+}
+
 @media screen and (max-width: 380px) and (min-width: 320px) {
   .header-logo {
     max-width: 150px;
@@ -57,6 +64,28 @@
   .search-input {
     width: 400px;
   }
+}
+
+@media (min-width: 320px){
+  .navbar-toggler-icon{
+    width: 1em;
+    height: 1em;
+  }
+}
+
+@media (min-width: 320px){
+  .header .userlogin-button{
+    font-size: 18px;
+  }
+}
+
+.login-button {
+  background-color: #9c54ff;
+  display: flex;
+}
+
+.login-button:hover {
+  background-color: #9c54ff;
 }
 
 .search-button {
@@ -125,7 +154,7 @@ footer hr {
   border-top: 1px solid #dee2e6;
 }
 
-@media (max-width: 362px) {
+@media (max-width: 920px) {
   .footer {
     text-align: center;
   }
@@ -137,6 +166,16 @@ footer hr {
 
 .categorySection {
   margin-bottom: 1rem;
+}
+
+.categoryIcons{
+  margin-top: 130px;
+}
+
+@media screen and (max-width: 320px) {
+  .categoryIcons {
+    margin-top: 100px;
+  }
 }
 
 .categoryTitle {
@@ -154,7 +193,6 @@ footer hr {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* / box-shadow: 5px 5px 20px rgba(128, 0, 128, 0.3); / */
 }
 
 .img-container img {
@@ -213,7 +251,7 @@ footer hr {
 
 @media (max-width: 433px) {
   .img-container {
-    width: 40px;
+    width: 35px;
     height: 40px;
   }
 
@@ -228,23 +266,18 @@ footer hr {
 
 .slider-content {
   padding: 20px 45px !important;
+  cursor: pointer !important;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 430px) {
   .slider-content {
-    padding: 10px 0 !important;
+    padding: 0 !important;
   }
 }
 
 .carousel-container {
   position: relative;
-  max-width: 97%;
-  margin: auto;
-  overflow: hidden;
-}
-.carousel-container {
-  position: relative;
-  max-width: 97%;
+  max-width: 100%;
   margin: auto;
   overflow: hidden;
 }
@@ -255,65 +288,48 @@ footer hr {
   width: 100%;
 }
 
-.img-container img {
-  width: 100%;
+.carousel-slide img {
+  min-width: 100%;
   height: auto;
-  object-fit: cover;
 }
 
-.carousel-dots {
+@media (min-width: 2500px) {
+  .carousel-container {
+    max-width: 2500px;
+  }
+
+  .carousel-slide {
+    justify-content: center;
+  }
+}
+
+.carousel_slider .item {
+  text-align: center;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.carousel-dots .dot {
-  height: 8px;
-  width: 8px;
-  margin: 0 5px;
-  background-color: #ffffff4d;
-  border-radius: 50%;
-  cursor: pointer;
+.owl-nav .owl-prev {
+  left: 0;
 }
 
-.carousel-dots .dot.active {
-  width: 25px;
-  border-radius: 10px;
+.owl-nav .owl-next {
+  right: 0;
 }
-
-@media (max-width: 767.98px) {
-  .carousel-dots {
-    bottom: 15px;
-  }
-
-  .carousel-dots .dot {
-    height: 5px;
-    width: 5px;
-    margin: 0 3px;
-  }
-
-  .carousel-dots .dot.active {
-    width: 20px;
-    border-radius: 7px;
-  }
+.owl-dots {
+  position: relative;
+  top: -3rem !important;
 }
-
-@media (max-width: 480px) {
-  .carousel-dots {
-    bottom: 10px;
-  }
-
-  .carousel-dots .dot {
-    height: 5px;
-    width: 5px;
-    margin: 0 3px;
-  }
-
-  .carousel-dots .dot.active {
-    width: 15px;
-    border-radius: 5px;
+@media (min-width: 320px) {
+  .owl-dots {
+    position: relative;
+    top: -2rem;
+    font-size: smaller !important;
   }
 }
 

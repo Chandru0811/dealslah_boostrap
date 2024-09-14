@@ -22,6 +22,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="./assets//css/custom.css" />
 
     <!-- AOS Animation CSS -->
@@ -59,7 +67,7 @@
               class="navbar-text d-xl-none align-items-center justify-content-end"
             >
               <button
-                class="btn btn-button search-button userlogin-button p-2 d-flex justify-content-center align-items-center"
+                class="btn btn-button login-button userlogin-button py-2 px-2 d-flex justify-content-center align-items-center"
                 type="submit"
               >
                 Login
@@ -124,7 +132,7 @@
               class="navbar-text d-none d-xl-inline align-items-center justify-content-end"
             >
               <button
-                class="btn btn-button search-button userlogin-button p-2 d-flex justify-content-center align-items-center"
+                class="btn btn-button login-button userlogin-button-large  py-2 px-4 d-flex justify-content-center align-items-center"
                 type="submit"
               >
                 Login
@@ -139,7 +147,7 @@
 
     <!-- Category & Banner Start  -->
     <!-- hero section -->
-    <section style="margin-top: 130px !important">
+    <section class="categoryIcons">
       <div class="container categorySection mt-5">
         <div class="row mx-lg-5 justify-content-center">
           <div class="col-custom d-flex flex-column align-items-center">
@@ -225,34 +233,34 @@
         </div>
       </div>
       <div class="container-fluid slider-content">
-        <div class="carousel-container">
-          <div class="carousel-slide">
+        <div class="owl-carousel carousel_slider owl-theme">
+          <div class="item">
             <img
               src="./assets/images/banner1.webp"
               alt="slider_image1"
               class="img-fluid px-2 rounded-5"
             />
+          </div>
+          <div class="item">
             <img
               src="./assets/images/banner2.webp"
               alt="slider_image2"
               class="img-fluid px-2 rounded-5"
             />
+          </div>
+          <div class="item">
             <img
               src="./assets/images/banner3.webp"
               alt="slider_image3"
               class="img-fluid px-2 rounded-5"
             />
+          </div>
+          <div class="item">
             <img
               src="./assets/images/banner4.webp"
               alt="slider_image4"
               class="img-fluid px-2 rounded-5"
             />
-          </div>
-          <div class="carousel-dots">
-            <span class="dot active" onclick="currentSlide(0)"></span>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
         </div>
       </div>
@@ -325,8 +333,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Kids Wear</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -351,8 +358,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Beauty Spa</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -377,8 +383,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Restaurants</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -403,8 +408,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Beauty Spa</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -430,8 +434,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Kids Wear</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -456,8 +459,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Beauty Spa</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -482,8 +484,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Men's Wear</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -508,8 +509,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Beauty Spa</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -523,7 +523,7 @@
               </div>
             </div>
           </div>
-         
+
           <div class="col-md-3 col-12 mb-3">
             <div class="card sub_topCard h-100">
               <span class="badge trending-badge">TRENDING</span>
@@ -535,8 +535,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Kids Wear</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -561,8 +560,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Beauty Spa</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -587,8 +585,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Restaurants</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -613,8 +610,7 @@
               <div class="card-body card_section">
                 <h5 class="card-title mt-3 ps-3">Beauty Spa</h5>
                 <p class="ps-3 fw-normal">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Dealslah, deals that matter in Singapore! Get the best of Electronics, Food, Travel, Makeup, Spa and other hot deals.
                 </p>
                 <hr />
                 <p class="ps-3 fw-medium" style="color: #9c54ff">$150 SGD</p>
@@ -675,7 +671,7 @@
           <div class="row justify-content-between">
             <!-- Logo and Social Media Icons -->
             <div class="col-md-4 text-md-start text-center mb-4 mb-md-0">
-              <p class="display-6 text-light fw-medium">DEALSLAH !</p>
+              <p class="display-6 text-light fw-medium" style="font-size: 2.0rem;">DEALSLAH !</p>
 
               <div class="social-icons">
                 <a href="#" class="text-decoration-none me-3"
@@ -718,7 +714,7 @@
                 </li>
                 <li>
                   <a href="#" class="text-light text-decoration-none"
-                    >Be a Partner</a
+                    >Post your deal</a
                   >
                 </li>
               </ul>
@@ -730,27 +726,27 @@
                 class="text-uppercase fw-medium mb-3 text-light"
                 style="font-size: 16px"
               >
-                Product
+                Categories
               </h6>
               <ul class="list-unstyled">
                 <li>
                   <a href="#" class="text-light text-decoration-none"
-                    >DealslahPay</a
+                    >Electronics</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-light text-decoration-none"
-                    >Dealslah Deals</a
+                    >Travels</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-light text-decoration-none"
-                    >Dealslah eCards</a
+                    >Restaurants</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-light text-decoration-none"
-                    >New Users - Free Treat</a
+                    >Grocery</a
                   >
                 </li>
               </ul>
@@ -767,17 +763,17 @@
               <ul class="list-unstyled">
                 <li>
                   <a href="#" class="text-light text-decoration-none"
-                    >Dealslah x GrabPay</a
+                    >Advertising</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-light text-decoration-none"
-                    >Dealslah x Boost</a
+                    >Premium Vendor</a
                   >
                 </li>
                 <li>
                   <a href="#" class="text-light text-decoration-none"
-                    >DuitNow</a
+                    >Promoted Deals</a
                   >
                 </li>
               </ul>
@@ -808,6 +804,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <!-- jQuery Validator -->
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./assets/js/custom.js"></script>
   </body>
 </html>
